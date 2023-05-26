@@ -13,3 +13,15 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+To preview storybook documentation, run storybook server:
+
+```bash
+npm run storybook
+# or
+yarn storybook
+# or
+pnpm storybook
+```
+
+Open [http://localhost:6006](http://localhost:6006) with your browser to see the result.

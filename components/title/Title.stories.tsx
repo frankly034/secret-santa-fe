@@ -19,15 +19,15 @@ export const Default: Story = {
 export const LastWordTitle: Story = {
   args: {
     children: "Gift a friend this holiday",
-    lastWordColor: "#F15156",
-    preceedingWordsColor: "#FDD365",
+    secondaryColor: "#F15156",
+    primaryColor: "#FDD365",
   },
 };
 
 export const SingleWordTitle: Story = {
   args: {
     children: "Gift",
-    lastWordColor: "#F15156",
-    preceedingWordsColor: "#FDD365",
+    secondaryColor: "#F15156",
+    primaryColor: "#FDD365",
   },
 };

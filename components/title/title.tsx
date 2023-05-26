@@ -7,19 +7,19 @@ const { Title: AntTitle } = Typography;
 
 interface TitleProps extends Omit<ComponentProps<typeof AntTitle>, "children"> {
   children: ReactNode;
-  lastWordColor?: string;
-  preceedingWordsColor?: string;
+  primaryColor?: string;
+  secondaryColor?: string;
 }
 
 type GetTitleContent = (args: TitleProps) => ReactNode;
 
 const getTitleContent: GetTitleContent = ({
   children,
-  lastWordColor,
-  preceedingWordsColor,
+  primaryColor,
+  secondaryColor,
 }) => {
   if (
-    lastWordColor &&
+    secondaryColor &&
     typeof children === "string" &&
     children.lastIndexOf(" ") !== -1
   ) {
@@ -29,24 +29,24 @@ const getTitleContent: GetTitleContent = ({
 
     return (
       <>
-        <span style={{ color: preceedingWordsColor }}>{preceedingWords}</span>
-        <span style={{ color: lastWordColor }}>{lastWord}</span>
+        <span style={{ color: primaryColor }}>{preceedingWords}</span>
+        <span style={{ color: secondaryColor }}>{lastWord}</span>
       </>
     );
   }
 
-  return <span style={{ color: preceedingWordsColor }}>{children}</span>;
+  return <span style={{ color: primaryColor }}>{children}</span>;
 };
 
 const Title: FunctionComponent<TitleProps> = ({
   children,
   level,
-  lastWordColor,
-  preceedingWordsColor,
+  primaryColor,
+  secondaryColor,
 }) => {
   return (
     <AntTitle className={styles.title} level={level}>
-      {getTitleContent({ children, lastWordColor, preceedingWordsColor })}
+      {getTitleContent({ children, primaryColor, secondaryColor })}
     </AntTitle>
   );
 };
