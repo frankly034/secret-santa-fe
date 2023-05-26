@@ -11,9 +11,9 @@ interface TitleProps extends Omit<ComponentProps<typeof AntTitle>, "children"> {
   preceedingWordsColor?: string;
 }
 
-type GetContent = (args: TitleProps) => ReactNode;
+type GetTitleContent = (args: TitleProps) => ReactNode;
 
-const getContent: GetContent = ({
+const getTitleContent: GetTitleContent = ({
   children,
   lastWordColor,
   preceedingWordsColor,
@@ -46,7 +46,7 @@ const Title: FunctionComponent<TitleProps> = ({
 }) => {
   return (
     <AntTitle className={styles.title} level={level}>
-      {getContent({ children, lastWordColor, preceedingWordsColor })}
+      {getTitleContent({ children, lastWordColor, preceedingWordsColor })}
     </AntTitle>
   );
 };
