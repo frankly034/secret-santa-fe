@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import Title from ".";
+import { PaletteColor } from "../../theme/themeColour";
 
 const meta: Meta<typeof Title> = {
   title: "Components/Title",
@@ -19,15 +20,15 @@ export const Default: Story = {
 export const LastWordTitle: Story = {
   args: {
     children: "Gift a friend this holiday",
-    secondaryColor: "#F15156",
-    primaryColor: "#FDD365",
+    secondaryColor: PaletteColor.red100,
+    primaryColor: PaletteColor.yellow100,
   },
 };
 
 export const SingleWordTitle: Story = {
   args: {
     children: "Gift",
-    secondaryColor: "#F15156",
-    primaryColor: "#FDD365",
+    secondaryColor: PaletteColor.red100,
+    primaryColor: PaletteColor.yellow100,
   },
 };

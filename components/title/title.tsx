@@ -3,19 +3,21 @@ import styles from "./title.module.css";
 import { Typography } from "antd";
 import { ComponentProps, FunctionComponent, ReactNode } from "react";
 
+import { PaletteColor, ThemeColor } from "../../theme/themeColour";
+
 const { Title: AntTitle } = Typography;
 
 interface TitleProps extends Omit<ComponentProps<typeof AntTitle>, "children"> {
   children: ReactNode;
-  primaryColor?: string;
-  secondaryColor?: string;
+  primaryColor?: ThemeColor;
+  secondaryColor?: ThemeColor;
 }
 
 type GetTitleContent = (args: TitleProps) => ReactNode;
 
 const getTitleContent: GetTitleContent = ({
   children,
-  primaryColor,
+  primaryColor = PaletteColor.yellow100,
   secondaryColor,
 }) => {
   if (

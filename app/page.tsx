@@ -1,12 +1,16 @@
 "use client";
 
 import { Title } from "@/components";
+import { PaletteColor } from "@/theme/themeColour";
 
 export default function Home() {
   return (
     <main>
       <div>
-        <Title preceedingWordsColor="#FDD365" lastWordColor="#F15156">
+        <Title
+          primaryColor={PaletteColor.yellow100}
+          secondaryColor={PaletteColor.red100}
+        >
           {"Gift a friend this holiday"}
         </Title>
       </div>

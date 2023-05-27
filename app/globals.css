@@ -1,3 +1,23 @@
+:root {
+  --grey100: #1e1e1e;
+  --grey200: #282627;
+  --grey300: #3e4244;
+
+  --white100: #e6e6e6;
+
+  --red100: #f15156;
+  --yellow100: #fdd365;
+
+  --primary-title-color: var(--yellow100);
+  --secondary-title-color: var(--red100);
+
+  --app-bg: var(--grey100);
+  --panel-bg: var(--grey200);
+  --control-bg: var(--grey300);
+
+  --forground-color: var(--white100);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,7 +28,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background: #1e1e1e;
+  background: var(--app-bg);
 }
 
 a {

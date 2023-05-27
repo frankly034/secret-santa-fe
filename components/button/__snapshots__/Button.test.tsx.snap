@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component - Button renders button component 1`] = `
+<div>
+  <button
+    class="ant-btn css-dev-only-do-not-override-15rg2km ant-btn-round ant-btn-default ant-btn-block primary"
+    type="button"
+  >
+    <span>
+      Click Me!
+    </span>
+  </button>
+</div>
+`;

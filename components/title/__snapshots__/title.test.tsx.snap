@@ -5,7 +5,9 @@ exports[`Title - Component renders title component 1`] = `
   <h1
     class="ant-typography title css-dev-only-do-not-override-15rg2km"
   >
-    <span>
+    <span
+      style="color: rgb(253, 211, 101);"
+    >
       Gift a friend this holiday
     </span>
   </h1>

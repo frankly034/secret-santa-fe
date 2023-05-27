@@ -1,0 +1,34 @@
+.primary {
+  color: #342f31;
+  background-color: var(--yellow100);
+  border-color: transparent;
+}
+
+.primary:disabled {
+  color: var(--yellow100);
+  background-color: rgba(253, 211, 101, 0.3);
+  border-color: transparent;
+}
+
+.primary:disabled:hover {
+  color: var(--yellow100) !important;
+  background-color: rgba(253, 211, 101, 0.5);
+}
+
+.primary:hover {
+  color: var(--grey-300) !important;
+  background-color: rgba(253, 211, 101, 0.8);
+  border-color: transparent !important;
+}
+
+.secondary {
+  background-color: rgba(241, 81, 86, 0.1);
+  color: var(--red100);
+  border-color: transparent;
+}
+
+.secondary:hover {
+  background-color: rgba(241, 81, 86, 0.3) !important;
+  color: var(--red100) !important;
+  border-color: transparent !important;
+}
